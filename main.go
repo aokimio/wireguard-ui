@@ -3,12 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/labstack/echo/v4"
-	"github.com/labstack/gommon/log"
-	"github.com/ngoduykhanh/wireguard-ui/store"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/joho/godotenv"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/gommon/log"
+	"github.com/ngoduykhanh/wireguard-ui/store"
 
 	rice "github.com/GeertJohan/go.rice"
 	"github.com/ngoduykhanh/wireguard-ui/emailer"
@@ -106,6 +108,8 @@ func init() {
 }
 
 func main() {
+	_ = godotenv.Load()
+
 	db, err := jsondb.New("./db")
 	if err != nil {
 		panic(err)
