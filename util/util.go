@@ -13,9 +13,9 @@ import (
 	"time"
 
 	rice "github.com/GeertJohan/go.rice"
+	"github.com/aokimio/wireguard-ui/model"
 	externalip "github.com/glendc/go-external-ip"
 	"github.com/labstack/gommon/log"
-	"github.com/ngoduykhanh/wireguard-ui/model"
 	"github.com/sdomino/scribble"
 )
 

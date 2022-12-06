@@ -8,12 +8,12 @@ import (
 	"text/template"
 
 	rice "github.com/GeertJohan/go.rice"
+	"github.com/aokimio/wireguard-ui/util"
 	"github.com/gorilla/sessions"
 	"github.com/labstack/echo-contrib/session"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
-	"github.com/ngoduykhanh/wireguard-ui/util"
 )
 
 // TemplateRegistry is a custom html/template renderer for Echo framework
